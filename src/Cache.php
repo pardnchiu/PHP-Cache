@@ -23,7 +23,7 @@ class Cache
         };
 
         // 設定快取檔案路徑
-        $folder = get_path("/storage/caches");
+        $folder = $_SERVER["DOCUMENT_ROOT"] . "/storage/caches";
         $file   = $folder . "/" . $page_key . ".json";
 
         // 資料夾不存在且無法創建時，返回 null
@@ -67,7 +67,7 @@ class Cache
         };
 
         // 設定快取檔案路徑
-        $folder = get_path("/storage/caches");
+        $folder = $_SERVER["DOCUMENT_ROOT"] . "/storage/caches";
         $file = $folder . "/" . $page_key . ".json";
         $data = [
             "content" => $content,
@@ -93,7 +93,7 @@ class Cache
     // 清理過期的快取資料
     public function clean()
     {
-        $folder = get_path("/storage/caches");
+        $folder = $_SERVER["DOCUMENT_ROOT"] . "/storage/caches";
 
         // 若資料夾不存在，直接返回
         if (!file_exists($folder)) {
