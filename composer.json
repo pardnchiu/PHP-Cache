@@ -1,0 +1,40 @@
+{
+    "name": "pardnchiu/cache",
+    "description": "PD\\Cache is A hybrid caching system for PHP that combines Redis and filesystem caching with automatic fallback support.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "邱敬幃 Pardn Chiu",
+            "email": "dev@pardn.io"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.0"
+    },
+    "suggest": {
+        "pardnchiu/redis": "For Redis caching support"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "PD\\": "src/"
+        },
+        "exclude-from-classmap": [
+            ".gitignore",
+            "*.md",
+            "composer.json"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    },
+    "scripts": {},
+    "extra": {
+        "branch-alias": {}
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
