@@ -1,6 +1,6 @@
 {
     "name": "pardnchiu/cache",
-    "description": "PD\\Cache is A hybrid caching system for PHP that combines Redis and filesystem caching with automatic fallback support.",
+    "description": "PD\\Cache is a hybrid caching system for PHP that combines Redis and filesystem caching with automatic filesystem fallback support.",
     "type": "library",
     "license": "MIT",
     "authors": [
